@@ -1,0 +1,13 @@
+# Versions used in the study (Python 3.13). Newer versions usually work; if a saved agent model fails to load, install these exact versions.
+numpy==2.5.4
+pandas==3.1.0
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1
+lightgbm==4.7.0
+optuna==5.0.0
+joblib==1.6.0
+matplotlib==3.11.2
+# to run the notebook
+jupyterlab
+ipykernel

@@ -1,0 +1,9 @@
+{
+  "validation_average_precision": 0.8785804744450256,
+  "validation_roc_auc": 0.9117511459567338,
+  "best_iteration": 117,
+  "train_rows": 83067,
+  "validation_rows": 17730,
+  "at_risk_train_rate": 0.35117435323293245,
+  "at_risk_validation_rate": 0.3925549915397631
+}

@@ -1,0 +1,9 @@
+{
+ "wall_clock_min": 45,
+ "command_min": 10,
+ "compute_min": 10,
+ "optuna_trials": 60,
+ "threads": 8,
+ "max_turns": 100,
+ "status": "Budgets fixed before the first run and unchanged for all 60 runs."
+}

@@ -1,0 +1,25 @@
+{
+ "train_rows_raw": 83067,
+ "train_rows_after_dedup": 82823,
+ "trials": 60,
+ "threads": 8,
+ "seed": 42,
+ "best_cv_pr_auc": 0.8471559928164537,
+ "best_params": {
+  "n_estimators": 302,
+  "max_depth": 8,
+  "learning_rate": 0.01466253487360103,
+  "subsample": 0.7348056901405988,
+  "colsample_bytree": 0.506566360656779,
+  "min_child_weight": 2,
+  "reg_lambda": 0.0016231119345797124,
+  "reg_alpha": 0.7568448153863189,
+  "gamma": 3.6077458653701013
+ },
+ "tuning_seconds": 128.3,
+ "final_fit_seconds": 0.8,
+ "total_seconds": 130.4,
+ "mean_trial_seconds": 2.14,
+ "xgboost": "3.4.1",
+ "optuna": "5.0.0"
+}

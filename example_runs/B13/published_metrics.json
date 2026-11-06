@@ -1,0 +1,94 @@
+{
+ "name": "B13",
+ "status": "ok",
+ "errors": {},
+ "validation": {
+  "predict_seconds": 1.1,
+  "n_scored": 17674,
+  "pr_auc": 0.8509718435460842,
+  "roc_auc": 0.8921544060052417,
+  "prevalence": 0.39295009618648863,
+  "score_range": [
+   0.0012413117568984974,
+   0.9991845881965185
+  ],
+  "best_f1": 0.7579742057250708
+ },
+ "leak_test": {
+  "predict_seconds": 1.1,
+  "columns_blanked": [
+   "reservation_status",
+   "reservation_status_date",
+   "is_canceled",
+   "assigned_room_type",
+   "booking_changes"
+  ],
+  "status": "ok",
+  "pr_auc_full": 0.8509718435460842,
+  "pr_auc_with_post_outcome_columns_blank": 0.8509718435460842,
+  "drop": 0.0,
+  "max_abs_score_diff": 0.0,
+  "leaky": false,
+  "per_column": {
+   "reservation_status": {
+    "pr_auc": 0.8509718435460842,
+    "drop": 0.0
+   },
+   "reservation_status_date": {
+    "pr_auc": 0.8509718435460842,
+    "drop": 0.0
+   },
+   "is_canceled": {
+    "pr_auc": 0.8509718435460842,
+    "drop": 0.0
+   },
+   "assigned_room_type": {
+    "pr_auc": 0.8509718435460842,
+    "drop": 0.0
+   },
+   "booking_changes": {
+    "pr_auc": 0.8509718435460842,
+    "drop": 0.0
+   }
+  },
+  "columns_relied_on": []
+ },
+ "test": {
+  "predict_seconds": 1.1,
+  "n_scored": 17699,
+  "pr_auc": 0.7747224697005881,
+  "roc_auc": 0.8445697171645239,
+  "prevalence": 0.39510706819594327,
+  "score_range": [
+   0.0015800173746802993,
+   0.9992021875060383
+  ],
+  "at_tuned_threshold": {
+   "accuracy": 0.7386293010904571,
+   "precision": 0.6215966300215761,
+   "recall": 0.8651508651508651,
+   "f1": 0.7234246083941169,
+   "flagged_share": 0.5499180744674841
+  },
+  "pr_auc_95ci": [
+   0.7652272401978332,
+   0.7841114790551224
+  ],
+  "f1_95ci": [
+   0.7159719669889756,
+   0.7309570483717871
+  ],
+  "at_0.5": {
+   "accuracy": 0.7519068873947681,
+   "precision": 0.6793987865416437,
+   "recall": 0.7045617045617045,
+   "f1": 0.6917514917514918,
+   "flagged_share": 0.4097406633143115
+  }
+ },
+ "threshold": {
+  "value": 0.38519983888710785,
+  "rule": "F1-max on validation"
+ },
+ "gap_val_minus_test_pr_auc": 0.07624937384549613
+}

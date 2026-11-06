@@ -1,0 +1,97 @@
+{
+ "name": "B09",
+ "status": "ok",
+ "errors": {},
+ "validation": {
+  "predict_seconds": 1.0,
+  "n_scored": 17674,
+  "pr_auc": 0.8785726414352305,
+  "roc_auc": 0.9116551488631399,
+  "prevalence": 0.39295009618648863,
+  "score_range": [
+   0.007082782291986811,
+   0.9924432794947332
+  ],
+  "best_f1": 0.7822036186875506
+ },
+ "leak_test": {
+  "predict_seconds": 1.0,
+  "columns_blanked": [
+   "reservation_status",
+   "reservation_status_date",
+   "is_canceled",
+   "assigned_room_type",
+   "booking_changes"
+  ],
+  "status": "ok",
+  "pr_auc_full": 0.8785726414352305,
+  "pr_auc_with_post_outcome_columns_blank": 0.8132309198332763,
+  "drop": 0.06534172160195417,
+  "max_abs_score_diff": 0.8246318264529008,
+  "leaky": true,
+  "per_column": {
+   "reservation_status": {
+    "pr_auc": 0.8785726414352305,
+    "drop": 0.0
+   },
+   "reservation_status_date": {
+    "pr_auc": 0.8785726414352305,
+    "drop": 0.0
+   },
+   "is_canceled": {
+    "pr_auc": 0.8785726414352305,
+    "drop": 0.0
+   },
+   "assigned_room_type": {
+    "pr_auc": 0.8122519928498365,
+    "drop": 0.066320648585394
+   },
+   "booking_changes": {
+    "pr_auc": 0.8752031850926364,
+    "drop": 0.0033694563425941126
+   }
+  },
+  "columns_relied_on": [
+   "assigned_room_type",
+   "booking_changes"
+  ]
+ },
+ "test": {
+  "predict_seconds": 0.9,
+  "n_scored": 17699,
+  "pr_auc": 0.7322301296625722,
+  "roc_auc": 0.7985141408922466,
+  "prevalence": 0.39510706819594327,
+  "score_range": [
+   0.008236702478814417,
+   0.9911640746800137
+  ],
+  "at_tuned_threshold": {
+   "accuracy": 0.6824114356743319,
+   "precision": 0.9886039886039886,
+   "recall": 0.1984841984841985,
+   "f1": 0.33059425985471,
+   "flagged_share": 0.07932651562235155
+  },
+  "pr_auc_95ci": [
+   0.7226090841255582,
+   0.7424887520373968
+  ],
+  "f1_95ci": [
+   0.3175557747679056,
+   0.3435396437255812
+  ],
+  "at_0.5": {
+   "accuracy": 0.679077914006441,
+   "precision": 1.0,
+   "recall": 0.18775918775918776,
+   "f1": 0.3161569949434144,
+   "flagged_share": 0.07418498220238431
+  }
+ },
+ "threshold": {
+  "value": 0.26589999416985743,
+  "rule": "F1-max on validation"
+ },
+ "gap_val_minus_test_pr_auc": 0.14634251177265833
+}
