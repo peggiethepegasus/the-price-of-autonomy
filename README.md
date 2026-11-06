@@ -15,7 +15,7 @@ Open **`ThePriceOfAutonomy_Replication.ipynb`**.
 
 ## Quick start
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/the-price-of-autonomy.git
+git clone https://github.com/peggiethepegasus/the-price-of-autonomy.git
 cd the-price-of-autonomy
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
